@@ -446,7 +446,11 @@ def showwin(level):
 
         if clickx >= 831 and clickx <= 940:
             if clicky >= 388 and clicky <= 462:
-                showlevelinfo(level + 1)
+                if level == 4:
+                    showmenu(True)
+
+                else:
+                    showlevelinfo(level + 1)
 
 def showlose(level):
     while True:
@@ -539,7 +543,7 @@ while run:
     screen = pygame.display.set_mode((960, 540))
     pygame.display.set_caption("Orths Economic Game...?")
 
-    showlevel(0)
+    showmenu(False)
     
 pygame.quit()
 exit()
