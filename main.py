@@ -25,12 +25,10 @@ def showmenu(showend):
 
         clickx, clicky = getmouseclicks()
 
-        if clickx >= 40 and clickx <= 149:
-            if clicky >= 330 and clicky <= 404:
+        if (clickx >= 40 and clickx <= 149) and (clicky >= 330 and clicky <= 404):
                 showlevelinfo(0)
 
-        if clickx >= 40 and clickx <= 171:
-            if clicky >= 427 and clicky <= 501:
+        if (clickx >= 40 and clickx <= 171) and (clicky >= 427 and clicky <= 501):
                 showrules()
 
 def showrules():
@@ -38,7 +36,7 @@ def showrules():
         screen.blit(rules, (0,0))
         pygame.display.update()
 
-        clickx, clicky= getmouseclicks()
+        clickx, clicky = getmouseclicks()
 
         if clickx >= 30 and clickx <= 139:
             if clicky >= 388 and clicky <= 462:
